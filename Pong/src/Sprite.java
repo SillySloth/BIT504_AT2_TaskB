@@ -95,8 +95,8 @@ public class Sprite {
 		this.height = height;
 	}
 
-	public void setColour(Color colour) {
-		this.color = colour;
+	public void setColor(Color color) {
+		this.color = color;
 	}
 	
 	
