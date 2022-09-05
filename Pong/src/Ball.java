@@ -12,9 +12,5 @@ public class Ball extends Sprite{
         setColor(ballColor);
         setInitialPosition(panelWidth / 2 - (getWidth() / 2), panelHeight / 2 - (getHeight() / 2));
         resetToInitialPosition();
-	}
-	
-	
-	
-	
+	}	
 }

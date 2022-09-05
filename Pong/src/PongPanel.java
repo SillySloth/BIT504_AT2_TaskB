@@ -13,7 +13,7 @@ import java.awt.BasicStroke;
 
 public class PongPanel extends JPanel implements ActionListener, KeyListener {
 
-	private final static Color BackgroundColor = Color.BLACK;
+	private final static Color BackgroundColor = Color.black;
 	private final static int TimerDelay = 5;
 	GameState gameState = GameState.Initialising;
 	Ball ball;
@@ -93,7 +93,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 		Graphics2D g2d = (Graphics2D) g.create();
 		Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[] { 9 }, 0);
 		g2d.setStroke(dashed);
-		g2d.setPaint(Color.WHITE);
+		g2d.setPaint(Color.white);
 		g2d.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
 		g2d.dispose();
 	}
@@ -144,11 +144,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 			}
 			
 			g.drawString(winText, textPosition, yWinnerPadding);
-		}
-		
-		
-		
-		
+		}		
 	}
 
 	private void checkPaddleBounce() {
@@ -186,12 +182,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 
 	private void resetBall() {
 		ball.resetToInitialPosition();
-	}
-
-	@Override
-	public void keyTyped(KeyEvent e) {
-
-	}
+	}	
 
 	@Override
 	public void keyPressed(KeyEvent event) {
@@ -217,6 +208,11 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 		else if (event.getKeyCode() == KeyEvent.VK_W || event.getKeyCode() == KeyEvent.VK_S) {
 			paddle1.setyVelocity(0);
 		}
+	}
+	
+	@Override
+	public void keyTyped(KeyEvent e) {
+
 	}
 
 	@Override

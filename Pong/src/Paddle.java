@@ -20,6 +20,5 @@ public class Paddle extends Sprite {
         }
         setInitialPosition(xPos, panelHeight / 2 - (getHeight() / 2));
         resetToInitialPosition();
-	}
-	
+	}	
 }
