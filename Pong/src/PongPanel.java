@@ -18,7 +18,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	GameState gameState = GameState.Initialising;
 	Ball ball;
 	Paddle paddle1, paddle2;
-	private final static int ballMovementSpeed = 2;
+	private final static int ballMovementSpeed = 3;
 	private final static int pointsToWin = 3;
 	int player1Score = 0, player2Score = 0;
 	Player gameWinner;
